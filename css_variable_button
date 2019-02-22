@@ -1,0 +1,91 @@
+<!--
+https://ithelp.ithome.com.tw/articles/10187737
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.text {
+    margin: 0 5px;
+    border-bottom: 1px solid;
+    color: var(--theme-color--main, #333);
+}
+
+.btn {
+    margin: 5px 0;
+    outline: 0;
+    border: 1px solid;
+    padding: 6px 12px;
+    color: var(--text-color, #333);
+    border-color: var(--theme-color--second, #ccc);
+    background: var(--theme-color--main, #fff);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn--ghost {
+    color: var(--theme-color--second, #333);
+    border-color: currentColor;
+    background: transparent;
+    border-radius: 0;
+}
+
+.btn--ghost:hover {
+    color: #fff;
+    border-color: var(--theme-color--second, #333);
+    background: var(--theme-color--second, #333);
+}
+
+.primary { --text-color: #fff;    --theme-color--main: #337ab7;     --theme-color--second: #2e6da4; }
+.success { --text-color: #fff;    --theme-color--main: #5cb85c;     --theme-color--second: #4cae4c; }
+.info    { --text-color: #fff;    --theme-color--main: #5bc0de;     --theme-color--second: #46b8da; }
+.warning { --text-color: #fff;    --theme-color--main: #f0ad4e;     --theme-color--second: #eea236; }
+.danger  { --text-color: #fff;    --theme-color--main: #d9534f;     --theme-color--second: #d43f3a; }
+.link    { --text-color: #337ab7; --theme-color--main: transparent; --theme-color--second: transparent; }
+
+.btn:hover { --theme-color--main: #e6e6e6; --theme-color--second: #adadad; }
+
+.primary:hover { --theme-color--main: #286090;     --theme-color--second: #204d74; }
+.success:hover { --theme-color--main: #449d44;     --theme-color--second: #4cae4c; }
+.info:hover    { --theme-color--main: #31b0d5;     --theme-color--second: #269abc; }
+.warning:hover { --theme-color--main: #ec971f;     --theme-color--second: #d58512; }
+.danger:hover  { --theme-color--main: #c9302c;     --theme-color--second: #ac2925; }
+.link:hover    { --theme-color--main: transparent; --theme-color--second: transparent; text-decoration: underline; }
+
+
+ 
+</style>
+</head>
+<body>
+
+<button class="btn">Default</button>
+<button class="btn primary">Primary</button>
+<button class="btn success">Success</button>
+<button class="btn info">Info</button>
+<button class="btn warning">Warning</button>
+<button class="btn danger">Danger</button>
+<button class="btn link">Link</button>
+
+<br/><br/><br/>
+
+<button class="btn btn--ghost">Default</button>
+<button class="btn btn--ghost primary">Primary</button>
+<button class="btn btn--ghost success">Success</button>
+<button class="btn btn--ghost info">Info</button>
+<button class="btn btn--ghost warning">Warning</button>
+<button class="btn btn--ghost danger">Danger</button>
+<button class="btn btn--ghost link">Link</button>
+
+<br/><br/><br/>
+
+<a class="text">Default</a>
+<a class="text primary">Primary</a>
+<a class="text success">Success</a>
+<a class="text info">Info</a>
+<a class="text warning">Warning</a>
+<a class="text danger">Danger</a>
+
+
+</body>
+</html>
